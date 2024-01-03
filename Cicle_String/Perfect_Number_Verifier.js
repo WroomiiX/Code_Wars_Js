@@ -9,9 +9,9 @@
 
 function isPerfect(n) {
     let count = 1;
-    for(let i = 1; i <= n ** 0.5; i++){
+    for(let i = 2; i <= n ** .5; i++){
         if(n % i === 0){
-            count += i + n/i;
+            count += i + n/i; 
         }
     }
     return count === n && n > 1
